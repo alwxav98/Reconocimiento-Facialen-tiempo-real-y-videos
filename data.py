@@ -13,7 +13,7 @@ if not os.path.exists(personPath): #si no exite la carpeta con el nombre de la p
 #cap = cv2.VideoCapture(0, cv2.CAP_DSHOW) #se utiliza la camara del dispositivo en el que se esta ejecutando
 cap = cv2.VideoCapture('ejemplo7.mp4') #se utiliza un video que se tenga en el dispositivo
 
-faceClassif = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+faceClassif = cv2.CascadeClassifier(cv2.data.haarcascades+'haarcascade_frontalface_default.xml')
 count = 0  # con el uso de hearcascade se puede analizar este archivo donde estan analizados los rasgos faciales
 
 while True:
